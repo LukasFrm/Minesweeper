@@ -1,0 +1,101 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+    word-break: break-all;
+    background-color: rgb(29, 83, 43);
+
+}
+
+.game {
+    display: inline-block;
+    margin: 80px calc(50% - 150px);
+    width: 300px;
+}
+    .game > .header {
+        display: inline-block;
+        width: 100%;
+    }
+        .game > .header > * {
+            display: inline-block;
+        }
+        .game > .header > .counter {
+            float: left;
+            width: 80px;
+            text-align: center;
+            background-color: #000;
+            color: red;
+            line-height: 50px;
+            font-size: 44px;
+            padding: 2px 5px;
+            font-family: "Technology";
+            letter-spacing: 3px;
+
+
+        }
+        .game > .header > .status-button {
+            float: left;
+            background-image: url(../img/smile.png);
+            margin-left: calc(50% - 105px);
+            height: 50px;
+            width: 50px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+            .game.game-over > .header > .status-button {
+                background-image: url(../img/sad-face.png);
+            }
+        .game > .header > .counter:last-child {
+            float: right;
+        }
+    .game > .field {
+        display: inline-block;
+        width: 100%;
+    }
+        .game > .field > .cell {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            float: left;
+            border: 1px solid #CCC;
+            background-color: grey;
+            box-sizing: border-box;
+            box-shadow: -2px -2.5px 1px 1px inset;
+            text-align: center;
+
+        }
+            .game > .field > .cell.flag {
+                background-image: url(../img/flag.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .game > .field > .cell.open {
+
+                box-shadow: none;
+                text-align: center;
+
+
+            }
+
+            @font-face {
+            font-family: 'Technology';
+            src: URL('../Technology.ttf') format('truetype');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
